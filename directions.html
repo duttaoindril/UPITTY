@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
     <script src="http://js.arcgis.com/3.9/"></script>
+    <style>
+        html, body, #map {
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+        body {
+            background-color:#FFF;
+            overflow:hidden;
+            font-family:"Trebuchet MS";
+        }
+    </style>
     <script>
         require(["esri/urlUtils", "esri/map", "esri/dijit/Directions", "dojo/parser","dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"], function(
             urlUtils, Map, Directions, parser
