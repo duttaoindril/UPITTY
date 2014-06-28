@@ -26,6 +26,7 @@ body {
   background-color: rgba(256, 256, 256, 0.4);
   border-radius: 50%;
   text-align: center;
+  z-index: 15;
 }
 #hovnav img
 {
