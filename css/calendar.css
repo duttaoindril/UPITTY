@@ -72,7 +72,9 @@ table.week td:hover {
     color: #444444;
     width: 17%;
 }
-
+table.week td:hover:before td {
+    width: 10%;
+}
 td.today {
     font-weight: bold;
     background-color: rgba(181, 228, 206, .4);
