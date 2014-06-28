@@ -33,10 +33,10 @@
     text-align: right;
 }
 .onoffswitch-switch {
-    display: block; width: 37px; margin: 0.5px;
+    display: block; width: 27%; margin: 0.5px;
     background: #FFFFFF;
     border: 2px solid #999999; border-radius: 5px;
-    position: absolute; top: 0; bottom: 0; right: 90px;
+    position: absolute; top: 0; bottom: 0; right: 68%;
     -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
     -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
 }
