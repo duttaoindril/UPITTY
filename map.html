@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="css/index.css">
     <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
 </head>
 
-<body>
-
-    <h1>Up</h1>
-    <h2>Stay Up.</h2>
-
+<body class="claro">
+    <div id="mapDiv"></div>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -24,7 +24,14 @@
     <script src="http://js.arcgis.com/3.9/"></script>
     <script src="js/main.js"></script>
     <script>
-
+        var map;
+        require(["esri/map", "dojo/domReady!"], function (Map) {
+            map = new Map("mapDiv", {
+                center: [37.404401799999995, -121.97542820000001],
+                zoom: 7,
+                basemap: "streets"
+            });
+        });
     </script>
 </body>
 
