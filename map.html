@@ -1,36 +1,31 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
     <title>Up | Stay Up.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/universal.css">
     <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
 </head>
-
 <body class="claro">
     <div id="mapDiv"></div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/mapshit.js"></script>
-    <!--    <script src="js/main.js"></script>-->
+    <script src="http://js.arcgis.com/3.9/"></script>
     <script>
-        var map;
-        require(["esri/map", "dojo/domReady!"], function (Map) {
-            map = new Map("mapDiv", {
-                center: [37.404401799999995, -121.97542820000001],
-                zoom: 7,
-                basemap: "streets"
-            });
-        });
+    var map;
+    require(["esri/map", "dojo/domReady!"], function(Map) {
+      map = new Map("mapDiv", {
+        center: [37.404401799999995, -121.97542820000001],
+        zoom: 7,
+        basemap: "streets"
+    });
+  });
     </script>
 </body>
-
 </html>
