@@ -1,5 +1,7 @@
  .onoffswitch {
-    position: relative; width: 132px;
+    position: relative; width: 15%;
+    min-width: 132px;
+    margin-left: 42.5%;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
