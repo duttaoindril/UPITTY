@@ -65,11 +65,14 @@ table.week td {
     width: 14.2857%;
     padding: 2px 3px;
     vertical-align: top;
+    position: static;
 }
 
 table.week td:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: #444444;
+    width: 17%;
+    position: fixed;
 }
 
 td.today {
