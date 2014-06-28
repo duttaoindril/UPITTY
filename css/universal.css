@@ -12,7 +12,7 @@ html, body, #mapDiv {
       height: 100%;
 }
 body {
-    background-color:#FFF;
+    background-color: transparent;
     overflow:hidden;
     font-family:"Raleway";
 }
