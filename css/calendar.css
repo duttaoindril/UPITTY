@@ -12,17 +12,17 @@ body{
 table {
   width: 100%;
   font-size: 14px;
-  border-left: 1px solid #d6d6d6;
+  border-left: 1px solid #4285f4;
 }
 
 td {
-  border-right: 1px solid #d6d6d6;
+  border-right: 1px solid #4285f4;
 }
 
 #header-table tr:first-child {
   text-align: center;
   color: #0055ff;
-  border-top: 1px solid #d6d6d6;
+  border-top: 1px solid #4285f4;
   text-shadow: 1px 1px 3px #e0393e;
 }
 
@@ -40,7 +40,7 @@ td {
 
 #day-names {
   text-align: center;
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid #4285f4;
   height: 2.5%;
 }
 
@@ -55,7 +55,7 @@ table.week {
 }
 
 table.week {
-  border-bottom: 1px solid #d6d6d6;
+  border-bottom: 1px solid #4285f4;
 }
 
 table.week td {
