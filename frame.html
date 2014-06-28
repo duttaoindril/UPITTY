@@ -6,8 +6,8 @@
     <title>Up | Stay Up</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="css/settings.css">
     <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/map.css">
     <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -19,29 +19,28 @@
     <iframe src="http://developers.arcgis.com/javascript/samples/widget_directions_basic/" id="frame"></iframe>
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
     <script>
-
-    function toggle()
-    {
-        if($("#button").val() == "1")
+        function toggle()
         {
-            $("button").val("2");
-            document.getElementById("cover").style.opacity = "1";
-            document.getElementById("cover").style.backgroundColor = "black";
+            if($("#button").val() == "1")
+            {
+                $("button").val("2");
+                document.getElementById("cover").style.opacity = "1";
+                document.getElementById("cover").style.backgroundColor = "black";
+            }
+            else if($("#button").val() == "2")
+            {
+                $("#button").val("3");
+                document.getElementById("cover").style.opacity = "1";
+                document.getElementById("cover").style.backgroundColor = "white";
+            }
+            else if($("#button").val() == "3")
+            {
+                $("#button").val("1");
+                document.getElementById("cover").style.opacity = "0";
+                document.getElementById("cover").style.backgroundColor = "black";
+            }
         }
-        else if($("#button").val() == "2")
-        {
-            $("#button").val("3");
-            document.getElementById("cover").style.opacity = "1";
-            document.getElementById("cover").style.backgroundColor = "white";
-        }
-        else if($("#button").val() == "3")
-        {
-            $("#button").val("1");
-            document.getElementById("cover").style.opacity = "0";
-            document.getElementById("cover").style.backgroundColor = "black";
-        }
-    }
-    $("#button").click(toggle);
+        $("#button").click(toggle);
     </script>
 </body>
 
