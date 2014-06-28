@@ -14,7 +14,7 @@
     display: 100%;
     z-index: 10;
     opacity: 0;
-    background-color: transparent;
+    background-color: white;
 }
 #button
 {
