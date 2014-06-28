@@ -16,7 +16,8 @@ table {
 }
 
 td {
-  border-right: 1px solid #4285f4;
+  border-right: 1px solid #ff8000;
+  color: #4285f4;
 }
 
 #header-table tr:first-child {
@@ -36,6 +37,7 @@ td {
 #header-table td {
   padding: 4px;
   height: 5%;
+  color: #e0393e;
 }
 
 #day-names {
