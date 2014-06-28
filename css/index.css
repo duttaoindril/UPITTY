@@ -1,3 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,700);
+
+h1{
+  text-align: center;
+  font-family: Raleway;
+
+}
+
 .screen-reader-text {
   position: absolute;
   top: -9999px;
