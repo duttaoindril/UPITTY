@@ -67,7 +67,7 @@ table.week td {
     vertical-align: top;
 }
 
-table.week td {
+table.week td:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: #444444;
 }
