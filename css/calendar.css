@@ -1,124 +1,124 @@
 body{
-  background-color: rgba(0, 0, 0, 0.05);
-  background-image: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: none;
 }
 
 .wrapper {
-  width: 100%;
-  height: 100%;
-  padding: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 table {
-  width: 100%;
-  font-size: 14px;
-  border-left: 1px solid #ff8000;
+    width: 100%;
+    font-size: 14px;
+    border-left: 1px solid #ff8000;
 }
 
 td {
-  transition: all .5s;
-  border-right: 1px solid #ff8000;
-  color: #4285f4;
+    transition: all .5s;
+    border-right: 1px solid #ff8000;
+    color: #4285f4;
 }
 
 #header-table tr:first-child {
-  text-align: center;
-  color: #0055ff;
-  border-top: 1px solid #ff8000;
-  text-shadow: 1px 1px 3px #e0393e;
+    text-align: center;
+    color: #0055ff;
+    border-top: 1px solid #ff8000;
+    text-shadow: 1px 1px 3px #e0393e;
 }
 
 #header-table tr:nth-child(2) {
-  background-color: #e0393e;
-  color: white;
-  border: 1px solid #ff8000;
-  text-shadow: 1px 1px 2px #e0393e;
+    background-color: #e0393e;
+    color: white;
+    border: 1px solid #ff8000;
+    text-shadow: 1px 1px 2px #e0393e;
 }
 
 #header-table td {
-  padding: 4px;
-  height: 5%;
-  color: #e0393e;
+    padding: 4px;
+    height: 5%;
+    color: #e0393e;
 }
 
 #day-names {
-  text-align: center;
-  border-bottom: 1px solid #ff8000;
-  height: 2.5%;
+    text-align: center;
+    border-bottom: 1px solid #ff8000;
+    height: 2.5%;
 }
 
 #day-names td {
-  width: 14.2857%;
-  height: 18%;
-}
-
-#day-names td:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #444444;
+    width: 14.2857%;
+    height: 18%;
 }
 
 table.week {
-  font-size: 75%;
-  height: 18.5%;
+    font-size: 75%;
+    height: 18.5%;
 }
 
 table.week {
-  border-bottom: 1px solid #ff8000;
+    border-bottom: 1px solid #ff8000;
 }
 
 table.week td {
-  width: 14.2857%;
-  padding: 2px 3px;
-  vertical-align: top;
+    width: 14.2857%;
+    padding: 2px 3px;
+    vertical-align: top;
+}
+
+table.week td {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #444444;
 }
 
 td.today {
-  font-weight: bold;
-  background-color: rgba(181, 228, 206, .4);
+    font-weight: bold;
+    background-color: rgba(181, 228, 206, .4);
 }
 
 td.today.date {
-  font-size: 110%;
-  text-shadow: 1px 1px 3px rgba(25,25,25, 0.3);
+    font-size: 110%;
+    text-shadow: 1px 1px 3px rgba(25,25,25, 0.3);
 }
 
 table.week tr:first-child {
-  height: 25%;
+    height: 25%;
 }
 
 table.week tr:nth-child(2) {
-  height: 75%;
+    height: 75%;
 }
 
 .event.holiday {
-  background-color: #c5c5ee;
+    background-color: #c5c5ee;
 }
 
 td.event.important {
-  background-color: #A4C739;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+    background-color: #A4C739;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 }
 
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px) {
-  .wrapper {
-    width: inherit;
-    min-width: 220px;
-}
-#day-names {
-    display: none;
-}
-table.week{
-    height: 30px;
-}
-.week td {
-    padding: auto;
-    text-align: center;
-}
-.week tr:nth-child(2) {
-    display: none;
-}
+    .wrapper {
+        width: inherit;
+        min-width: 220px;
+    }
+    #day-names {
+        display: none;
+    }
+    table.week{
+        height: 30px;
+    }
+    .week td {
+        padding: auto;
+        text-align: center;
+    }
+    .week tr:nth-child(2) {
+        display: none;
+    }
 }
