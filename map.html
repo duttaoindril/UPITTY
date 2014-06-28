@@ -1,26 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Up | Stay Up.</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
-    <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
-</head>
-<body class="claro">
-    <div id="mapDiv"></div>
-    <script src="http://js.arcgis.com/3.9/"></script>
-    <script>
-    var map;
-    require(["esri/map", "dojo/domReady!"], function(Map) {
-      map = new Map("mapDiv", {
-        center: [37.406, -121.977],
-        zoom: 3,
-        basemap: "streets"
-    });
-  });
-    </script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Up | Stay Up.</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/universal.css">
+      <link rel="stylesheet" href="css/index.css">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+      <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
+      <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+      <script src="http://js.arcgis.com/3.9/"></script>
+      <script>
+      var map;
+      require(["esri/map", "dojo/domReady!"], function(Map) {
+          map = new Map("mapDiv", {
+            center: [37.406, -121.977],
+            zoom: 5,
+            basemap: "streets"
+        });
+      });
+      </script>
+
+  </head>
+      <body class="claro">
+          <div id="mapDiv"></div>
+      </body>
+  </html>
