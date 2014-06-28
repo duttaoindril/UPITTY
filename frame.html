@@ -19,7 +19,7 @@
     <iframe src="http://developers.arcgis.com/javascript/samples/widget_directions_basic/" id="frame"></iframe>
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
     <script>
-    function toggle()
+    function toggle($("#button"))
     {
         if($("#button").val() == "OFF")
         {
@@ -32,7 +32,6 @@
             console.log("OFF");
         }
     }
-    $("#button").click(toggle);
     </script>
 </body>
 
