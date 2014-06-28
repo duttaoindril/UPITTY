@@ -16,3 +16,15 @@ body {
     overflow:hidden;
     font-family:"Raleway";
 }
+#hovnav
+{
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right: 0;
+}
+#hovnav img
+{
+  height: 100%;
+  width: 100%;
+}
