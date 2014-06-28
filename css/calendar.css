@@ -50,13 +50,10 @@ td {
 #day-names td {
   width: 14.2857%;
   height: 18%;
-  position: static;
 }
 
 #day-names td:hover {
-  width: 16%;
-  height: 20%;
-  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 table.week {
@@ -109,18 +106,18 @@ only screen and (max-width: 760px),
   .wrapper {
     width: inherit;
     min-width: 220px;
-  }
-  #day-names {
+}
+#day-names {
     display: none;
-  }
-  table.week{
+}
+table.week{
     height: 30px;
-  }
-  .week td {
+}
+.week td {
     padding: auto;
     text-align: center;
-  }
-  .week tr:nth-child(2) {
+}
+.week tr:nth-child(2) {
     display: none;
-  }
+}
 }
