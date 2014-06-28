@@ -12,6 +12,8 @@
     <script src="http://js.arcgis.com/3.9/"></script>
     <script>
     var map;
+    var directions = new Directions({map: map}, "dir");
+    directions.startup();
     require(["esri/map", "esri/dijit/Directions", "dojo/parser",
             "dijit/layout/BorderContainer", "dijit/layout/ContentPane",
             "dojo/domReady!"
@@ -23,8 +25,6 @@
                     basemap: "national-geographic"
                 });
             });
-    var directions = new Directions({map: map}, "dir");
-    directions.startup();
     </script>
 </head>
 <body class="claro">
