@@ -11,10 +11,6 @@
   speak: none;
 }
 
-.icon-home:after     { content: "\e802"; } 
-.icon-cog:after      { content: "\e801"; } 
-.icon-cw:after       { content: "\e803"; } 
-.icon-location:after { content: "\e800"; } 
 
 * { 
   -webkit-box-sizing: border-box; 
