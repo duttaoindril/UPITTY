@@ -1,5 +1,5 @@
-.onoffswitch {
-    position: relative; width: 55px;
+ .onoffswitch {
+    position: relative; width: 132px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 .onoffswitch-checkbox {
@@ -7,7 +7,7 @@
 }
 .onoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
+    border: 2px solid #999999; border-radius: 5px;
 }
 .onoffswitch-inner {
     display: block; width: 200%; margin-left: -100%;
@@ -15,26 +15,26 @@
     -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 26px; padding: 0; line-height: 26px;
-    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    display: block; float: left; width: 50%; height: 38px; padding: 0; line-height: 38px;
+    font-size: 13px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 .onoffswitch-inner:before {
-    content: "I";
-    padding-left: 10px;
+    content: "ALERT";
+    padding-left: 7px;
     background-color: #2FCCFF; color: #FFFFFF;
 }
 .onoffswitch-inner:after {
-    content: "O";
-    padding-right: 10px;
+    content: "NO ALERT";
+    padding-right: 7px;
     background-color: #EEEEEE; color: #999999;
     text-align: right;
 }
 .onoffswitch-switch {
-    display: block; width: 24px; margin: 1px;
+    display: block; width: 37px; margin: 0.5px;
     background: #FFFFFF;
-    border: 2px solid #999999; border-radius: 20px;
-    position: absolute; top: 0; bottom: 0; right: 25px;
+    border: 2px solid #999999; border-radius: 5px;
+    position: absolute; top: 0; bottom: 0; right: 90px;
     -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
     -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
 }
