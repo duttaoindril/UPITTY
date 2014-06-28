@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
-    <script>var dojoConfig = { parseOnLoad: true };</script>
     <script src="http://js.arcgis.com/3.9/"></script>
 </head>
 <body class="claro">
@@ -27,6 +26,7 @@
     <iframe src="http://developers.arcgis.com/javascript/samples/widget_directions_basic/" id="frame"></iframe>
     <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
     <script>
+        var dojoConfig = { parseOnLoad: true };
         require(["esri/urlUtils", "esri/map", "esri/dijit/Directions", "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"],
             function(urlUtils, Map, Directions){
                 var map = new Map("map", {
