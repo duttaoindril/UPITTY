@@ -54,6 +54,7 @@ td {
 
 #day-names td:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  color: #444444;
 }
 
 table.week {
