@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Up | Stay up</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/universal.css">
-    <link rel="stylesheet" type="text/css" href="css/map.css">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Up | Stay Up</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/universal.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">
     <link rel="stylesheet" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+    <script>var dojoConfig = { parseOnLoad: true };</script>
     <script src="http://js.arcgis.com/3.9/"></script>
     <script>
-    var map;
-    require(["esri/map", "esri/dijit/Directions", "dojo/parser",
-            "dijit/layout/BorderContainer", "dijit/layout/ContentPane",
-            "dojo/domReady!"
-            ], function (Map, Directions, parser) {
-                var map = new esri.Map("mapDiv", {
-                center: [-121.97542820000001, 37.404401799999995],
-                zoom: 12,
-                basemap: "national-geographic"
-              });
+    require(["esri/urlUtils", "esri/map", "esri/dijit/Directions", "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"],
+            function(urlUtils, Map, Directions){
+
+                var map = new Map("map", {
+                    basemap: "national-geographic",
+                    center:[-121.97542820000001, 37.404401799999995],
+                    zoom: 7
+                });
+
+                var directions = new Directions({
+                    map: map
+                },"dir");
+
+                directions.startup();
             });
     </script>
 </head>
 <body class="claro">
-    <div id="mapDiv"></div>
+    <div data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="design:'headline', gutters:false" style="width:100%;height:100%;">
+        <div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'right'" style="width:250px;">
+            <div id="dir"></div>
+        </div>
+        <div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" id="map"></div>
+    </div>
 </body>
 </html>
