@@ -1,9 +1,11 @@
+#object
+{
+    z-index: 1;
+}
 #dir
 {
-    z-index: 11;
     background-color: rgba(0, 0, 0, 0);
 }
-
 #map
 {
 
