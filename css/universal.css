@@ -41,7 +41,6 @@ body {
     opacity: 0;
     background-color: white;
 }
-
 #form
 {
   transition: all .1s;
@@ -54,7 +53,6 @@ body {
     opacity: 0;
     background-color: white;
 }
-
 #button
 {
     position: fixed;
