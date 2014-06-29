@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/universal.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/calendar.css">
-    <link rel="stylesheet" href="css/scheduler.css">
     <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 </head>
@@ -89,7 +88,7 @@
       <td>25</td>
       <td>26</td>
       <td>27</td>
-      <td class="today date">28</td>
+      <td id="todaydate">28</td>
     </tr>
   </table>
   <table class="week">
@@ -110,7 +109,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-
+      $("#form").hide();
+      function show () {
+          $("#form").show();
+      }
+      $("#todaydate").click();
     </script>
 </body>
 
