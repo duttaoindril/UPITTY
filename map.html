@@ -13,27 +13,52 @@
     <script>
     require(["esri/urlUtils", "esri/map", "esri/dijit/Directions", "dijit/layout/BorderContainer", "dijit/layout/ContentPane", "dojo/domReady!"],
             function(urlUtils, Map, Directions){
-
                 var map = new Map("map", {
                     basemap: "national-geographic",
                     center:[-121.97542820000001, 37.404401799999995],
-                    zoom: 7
+                    zoom: 13
                 });
-
                 var directions = new Directions({
                     map: map
                 },"dir");
-
                 directions.startup();
             });
     </script>
 </head>
 <body class="claro">
+    <a href="index.html" id="hovnav"><img src="img/icon.png"></a>
+    <div id="cover"></div>
+    <button id="button" value="1">Toggle</button>
     <div data-dojo-type="dijit.layout.BorderContainer" data-dojo-props="design:'headline', gutters:false" style="width:100%;height:100%;">
         <div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'right'" style="width:250px;">
             <div id="dir"></div>
         </div>
         <div data-dojo-type="dijit.layout.ContentPane" data-dojo-props="region:'center'" id="map"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script>
+        function toggle()
+        {
+            if($("#button").val() == "1")
+            {
+                $("button").val("2");
+                document.getElementById("cover").style.opacity = "1";
+                document.getElementById("cover").style.backgroundColor = "black";
+            }
+            else if($("#button").val() == "2")
+            {
+                $("#button").val("3");
+                document.getElementById("cover").style.opacity = "1";
+                document.getElementById("cover").style.backgroundColor = "white";
+            }
+            else if($("#button").val() == "3")
+            {
+                $("#button").val("1");
+                document.getElementById("cover").style.opacity = "0";
+                document.getElementById("cover").style.backgroundColor = "black";
+            }
+        }
+        $("#button").click(toggle);
+    </script>
 </body>
 </html>
